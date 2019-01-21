@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../routes */ "./routes.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/toolbar.js";
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/components/toolbar.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
@@ -218,7 +218,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ "./node_modules/next/head.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/layouts/main.js";
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/layouts/main.js";
 
  //import Nav from 'components/Nav'
 //import Footer from 'components/Footer'
@@ -11983,7 +11983,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/toolbar */ "./components/toolbar.js");
 /* harmony import */ var _public_css_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../public/css/main.css */ "./public/css/main.css");
 /* harmony import */ var _public_css_main_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_public_css_main_css__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/pages/index.js";
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/pages/index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -12118,7 +12118,7 @@ routes.add('about', '/about/:slug').add('search', '/blog/:slug').add('profile', 
 
 /***/ }),
 
-/***/ 3:
+/***/ 5:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -12143,5 +12143,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=index.js.map

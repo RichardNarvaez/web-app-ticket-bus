@@ -6,7 +6,9 @@ import Caja from '../components/cajaInfo'
 import Toolbar from '../components/toolbar'
 import CenterBox from '../components/centerBox';
 
+import Data from '../data/search.json'
 class DrawGrid extends React.Component {
+
     render() {
       return (
          <div className="container">
@@ -78,7 +80,9 @@ class AvailableList extends React.Component {
 export default class Search extends React.Component{
     constructor() {
         super();
+
           this.state = {
+            data: Data,
             seat: [
                 'F1','F2','F3', 'F4',
                 'M1','M2','M3', 'M4',
@@ -104,7 +108,7 @@ export default class Search extends React.Component{
             seatReserved: [
             ],
             seatReservedOthers: [
-                'B2'
+                'B2','M3', 'M4', 'C3', 'E3', 'D1', 'D2', 'G2'
             ]
         }
       }
@@ -157,7 +161,7 @@ export default class Search extends React.Component{
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Comprar</button>
+                    <button type="button" class="btn btn-primary">Validar</button>
                   </div>
                 </div>
               </div>
@@ -175,22 +179,19 @@ export default class Search extends React.Component{
                             <div className="col-8">
                                 <CenterBox></CenterBox>
                            
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
-                                <Caja/>
+                                {
+                                  this.state.data.map(function(item, i){
+                                      //console.log('test', item);
+                                      return <Caja data={item}/>
+                                  })
+                                }
+
                             </div>
                             <div className="col-4">
                                 <div className="box" style={{ textAlign: "center"}}>
                                     <p>Cesta</p>
-                                    <p>Tu total es:</p>
-                                    <p>19.65$</p>
+                                    <p>Tu total por un adulto y un niño es:</p>
+                                    <p>2.25$</p>
                                     <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">Comprar</button>
                                 </div>
                             </div>

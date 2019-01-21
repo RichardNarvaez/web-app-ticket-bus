@@ -19,6 +19,9 @@ export default (props) => (
                     <label>Llegada</label>
                     <select className="form-control" id="ab2">
                     <option>Ambato</option>
+                    <option>Baños</option>
+                    <option>Puyo</option>
+                    <option>Guayaquil</option>
                     </select>
                 </div>
 

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -104,14 +104,14 @@ module.exports =
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/cajaInfo.js";
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/components/cajaInfo.js";
 
-/* harmony default export */ __webpack_exports__["default"] = (function () {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+/* harmony default export */ __webpack_exports__["default"] = (function (prs) {
+  return prs.data ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "caja-info--viaje",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 2
+      lineNumber: 4
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -121,156 +121,196 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 5
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "col-xs-12 col-sm-12 col-md-5 col-lg-5 time-transfer",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 5
+      lineNumber: 7
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "col-xs-12 ride-stations",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 6
+      lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "dept-arr",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 10
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "ride-times",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 11
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "departure",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 12
     },
     __self: this
-  }, "23:35"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, prs.data.hora_salida), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "arrival",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 13
     },
     __self: this
-  }, "06:45")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, prs.data.hora_llegada)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "ride-station-names",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "ride-station-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 16
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "station-name departure-station-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
-  }, "Madrid")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, prs.data.salida)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "ride-station-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "station-name arrival-station-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 20
     },
     __self: this
-  }, "Lisboa (Oriente)"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "txt-disponible",
+  }, prs.data.llegada))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "txt-small",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 24
     },
     __self: this
-  }, "8 Asientos disponibles")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    class: "col-xs-6 col-sm-6 col-md-5 col-lg-4",
+  }, prs.data.date, " | Coop: ", prs.data.coop)), prs.data.disponible ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "txt-disponible",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
+    },
+    __self: this
+  }, prs.data.st_disponibles, " Asientos disponibles")) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "txt-no-disponible",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34
+    },
+    __self: this
+  }, "Viaje realizado")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    class: "col-xs-6 col-sm-6 col-md-5 col-lg-4",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 47
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "col-12 duration",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 48
     },
     __self: this
-  }, " 8:10 h"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, " ", prs.data.duracion, " h"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     class: "col-12 type",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 49
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 49
     },
     __self: this
   }, "Directo")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "col-xs-6 col-sm-6 col-md-2 col-lg-3 price-actions",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 52
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, prs.data.disponible ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     type: "button",
     class: "btn btn-success",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 55
     },
     __self: this
-  }, "Success"))));
+  }, "Reservar") : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    type: "button",
+    class: "btn btn-danger",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, "No disponible")))) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63
+    },
+    __self: this
+  }, "Error");
 });
 
 /***/ }),
@@ -288,7 +328,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "next/link");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/centerBox.js";
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/components/centerBox.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
@@ -369,17 +409,35 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
       lineNumber: 21
     },
     __self: this
-  }, "Ambato"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Ambato"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "Ba\xF1os"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "Puyo"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("option", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, "Guayaquil"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "form-group  dropdown col-3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 28
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("label", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 29
     },
     __self: this
   }, "Pasajeros"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -390,7 +448,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     "aria-expanded": "false",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 30
     },
     __self: this
   }, "Boletos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -398,14 +456,14 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     "aria-labelledby": "nvPas",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 34
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -414,7 +472,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   }, "Adulto"), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -425,14 +483,14 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     defaultValue: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 35
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -441,7 +499,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   }, "Ni\xF1os menores a 3 a\xF1os"), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -452,14 +510,14 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     defaultValue: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 36
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dropdown-item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -468,7 +526,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 37
     },
     __self: this
   }, "3ra Edad"), "  ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -479,14 +537,14 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     defaultValue: "0",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 37
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "dropdown-item d-flex align-items-center",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -494,7 +552,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     id: "gridCheck1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 39
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -504,7 +562,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
   }, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -514,7 +572,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
   }, " Carga "), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -525,14 +583,14 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 40
     },
     __self: this
   }, " En caso de llevar no se cobra extras "))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/search",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43
+      lineNumber: 46
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -543,7 +601,7 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
     className: "btn btn-primary",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 47
     },
     __self: this
   }, "Buscar"))));
@@ -564,7 +622,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../routes */ "./routes.js");
 /* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_routes__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/toolbar.js";
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/components/toolbar.js";
 
 
 /* harmony default export */ __webpack_exports__["default"] = (function (props) {
@@ -756,6 +814,17 @@ var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/components/
 
 /***/ }),
 
+/***/ "./data/search.json":
+/*!**************************!*\
+  !*** ./data/search.json ***!
+  \**************************/
+/*! exports provided: 0, 1, 2, 3, default */
+/***/ (function(module) {
+
+module.exports = [{"hora_salida":"12:00","hora_llegada":"13:00","salida":"Riobamba","llegada":"Ambato","st_disponibles":"10","coop":"San Juan","date":"22 de Enero de 2019","duracion":"1","disponible":true},{"hora_salida":"12:30","hora_llegada":"13:30","salida":"Riobamba","llegada":"Ambato","st_disponibles":"1","coop":"22 de Julio","date":"22 de Enero de 2019","duracion":"1","disponible":true},{"hora_salida":"13:30","hora_llegada":"14:30","salida":"Riobamba","llegada":"Ambato","st_disponibles":"16","coop":"San Juan","date":"22 de Enero de 2019","duracion":"1","disponible":true},{"hora_salida":"14:30","hora_llegada":"15:30","salida":"Riobamba","llegada":"Ambato","st_disponibles":"4","coop":"Condorazo","date":"22 de Enero de 2019","duracion":"1","disponible":true}];
+
+/***/ }),
+
 /***/ "./pages/search.js":
 /*!*************************!*\
   !*** ./pages/search.js ***!
@@ -775,7 +844,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/cajaInfo */ "./components/cajaInfo.js");
 /* harmony import */ var _components_toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/toolbar */ "./components/toolbar.js");
 /* harmony import */ var _components_centerBox__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/centerBox */ "./components/centerBox.js");
-var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/client/pages/search.js";
+/* harmony import */ var _data_search_json__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../data/search.json */ "./data/search.json");
+var _data_search_json__WEBPACK_IMPORTED_MODULE_6___namespace = /*#__PURE__*/__webpack_require__.t(/*! ../data/search.json */ "./data/search.json", 1);
+var _jsxFileName = "/Users/macbookpro/WebProjects/app-web-bus/pages/search.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -794,6 +865,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
 
 
 
@@ -822,60 +894,60 @@ function (_React$Component) {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 14
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 15
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
         className: "grid",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 15
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row bus",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 16
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "col-6",
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "conductor",
+        className: "row bus",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-6",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "conductor",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
         },
         __self: this
       }, "Conductor"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         },
         __self: this
       }), this.props.seat.map(function (row) {
@@ -883,7 +955,7 @@ function (_React$Component) {
           className: "col-3" + ' ' + (row.indexOf('1') > -1 || row.indexOf('2') > -1 ? 'Izq' : 'Der'),
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 25
+            lineNumber: 27
           },
           __self: this
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -894,7 +966,7 @@ function (_React$Component) {
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 29
           },
           __self: this
         }, row));
@@ -904,7 +976,7 @@ function (_React$Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         },
         __self: this
       }));
@@ -938,19 +1010,19 @@ function (_React$Component2) {
         className: "left",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 57
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 58
         },
         __self: this
       }, "Available Seats: (", seatCount == 0 ? 'No seats available' : seatCount, ")"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 59
         },
         __self: this
       }, this.props.available.map(function (res) {
@@ -958,7 +1030,7 @@ function (_React$Component2) {
           key: res,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 58
+            lineNumber: 60
           },
           __self: this
         }, res);
@@ -987,19 +1059,19 @@ function (_React$Component3) {
         className: "right",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 70
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 71
         },
         __self: this
       }, "Reserved Seats: (", this.props.reserved.length, ")"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 72
         },
         __self: this
       }, this.props.reserved.map(function (res) {
@@ -1007,7 +1079,7 @@ function (_React$Component3) {
           key: res,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 71
+            lineNumber: 73
           },
           __self: this
         }, res);
@@ -1030,10 +1102,11 @@ function (_React$Component4) {
 
     _this2 = _possibleConstructorReturn(this, _getPrototypeOf(Search).call(this));
     _this2.state = {
+      data: _data_search_json__WEBPACK_IMPORTED_MODULE_6__,
       seat: ['F1', 'F2', 'F3', 'F4', 'M1', 'M2', 'M3', 'M4', 'B1', 'B2', 'B3', 'B4', 'I1', 'I2', 'I3', 'I4', 'C1', 'C2', 'C3', 'C4', 'D1', 'D2', 'D3', 'D4', 'E1', 'E2', 'E3', 'E4', 'G1', 'G2', 'G3', 'G4', 'H1', 'H2', 'H3', 'H4'],
       seatAvailable: ['F1', 'F2', 'F3', 'F4', 'M1', 'M2', 'M3', 'M4', 'B1', 'B2', 'B3', 'B4', 'I1', 'I2', 'I3', 'I4', 'C1', 'C2', 'C3', 'C4', 'D1', 'D2', 'D3', 'D4', 'E1', 'E2', 'E3', 'E4', 'G1', 'G2', 'G3', 'G4', 'H1', 'H2', 'H3', 'H4'],
       seatReserved: [],
-      seatReservedOthers: ['B2']
+      seatReservedOthers: ['B2', 'M3', 'M4', 'C3', 'E3', 'D1', 'D2', 'G2']
     };
     return _this2;
   }
@@ -1069,7 +1142,7 @@ function (_React$Component4) {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 135
+          lineNumber: 139
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1081,7 +1154,7 @@ function (_React$Component4) {
         "aria-hidden": "true",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 142
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1089,21 +1162,21 @@ function (_React$Component4) {
         role: "document",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 139
+          lineNumber: 143
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "modal-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 140
+          lineNumber: 144
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "modal-header",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 141
+          lineNumber: 145
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
@@ -1111,7 +1184,7 @@ function (_React$Component4) {
         id: "exampleModalLabel",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 142
+          lineNumber: 146
         },
         __self: this
       }, "Cesta"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1121,27 +1194,27 @@ function (_React$Component4) {
         "aria-label": "Close",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 143
+          lineNumber: 147
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         "aria-hidden": "true",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 148
         },
         __self: this
       }, "\xD7"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "modal-body",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 147
+          lineNumber: 151
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 148
+          lineNumber: 152
         },
         __self: this
       }, "Elige tus asientos favoritos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DrawGrid, {
@@ -1152,14 +1225,14 @@ function (_React$Component4) {
         onClickData: this.onClickData.bind(this),
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 154
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         class: "modal-footer",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 162
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1168,7 +1241,7 @@ function (_React$Component4) {
         "data-dismiss": "modal",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 159
+          lineNumber: 163
         },
         __self: this
       }, "Close"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
@@ -1176,15 +1249,15 @@ function (_React$Component4) {
         class: "btn btn-primary",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 160
+          lineNumber: 164
         },
         __self: this
-      }, "Comprar"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      }, "Validar"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
         title: 'EasyTrans',
         class: 'navColor navbar-dark',
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 170
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1194,113 +1267,63 @@ function (_React$Component4) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 168
+          lineNumber: 172
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 169
+          lineNumber: 173
         },
         __self: this
       }, "Buscar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 170
+          lineNumber: 174
         },
         __self: this
       }, "Tienes 1 reserva")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 173
+          lineNumber: 177
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 174
+          lineNumber: 178
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 175
+          lineNumber: 179
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_centerBox__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 176
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 178
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 179
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 180
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 181
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 182
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 183
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 184
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 185
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 186
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 187
-        },
-        __self: this
+      }), this.state.data.map(function (item, i) {
+        //console.log('test', item);
+        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cajaInfo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          data: item,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 185
+          },
+          __self: this
+        });
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 189
+          lineNumber: 190
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -1310,35 +1333,35 @@ function (_React$Component4) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 190
+          lineNumber: 191
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 191
+          lineNumber: 192
         },
         __self: this
       }, "Cesta"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 192
-        },
-        __self: this
-      }, "Tu total es:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 193
         },
         __self: this
-      }, "19.65$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      }, "Tu total por un adulto y un ni\xF1o es:"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 194
+        },
+        __self: this
+      }, "2.25$"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "button",
         class: "btn btn-warning",
         "data-toggle": "modal",
         "data-target": "#exampleModal",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 194
+          lineNumber: 195
         },
         __self: this
       }, "Comprar"))))));
@@ -1380,7 +1403,7 @@ routes.add('about', '/about/:slug').add('search', '/blog/:slug').add('profile', 
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/search.js ***!
   \*******************************/
