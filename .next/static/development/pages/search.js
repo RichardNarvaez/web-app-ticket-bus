@@ -11844,7 +11844,7 @@ routes.add('about', '/about/:slug').add('search', '/blog/:slug').add('profile', 
 
 /***/ }),
 
-/***/ 6:
+/***/ 5:
 /*!*******************************!*\
   !*** multi ./pages/search.js ***!
   \*******************************/
@@ -11869,5 +11869,5 @@ module.exports = dll_831a3634f66cb1dada0c;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]));;
+},[[5,"static/runtime/webpack.js","styles"]]]));;
 //# sourceMappingURL=search.js.map

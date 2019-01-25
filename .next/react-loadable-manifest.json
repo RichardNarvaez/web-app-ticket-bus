@@ -1,4 +1,12 @@
 {
+  "./noop": [
+    {
+      "id": "./node_modules/next/dist/client/noop.js",
+      "name": "./node_modules/next/dist/client/noop.js",
+      "file": "static/chunks/0.js",
+      "publicPath": "static/chunks/0.js"
+    }
+  ],
   "../public/css/main.css": [
     {
       "id": "./public/css/main.css",
@@ -13,30 +21,6 @@
       "name": null,
       "file": "static/chunks/styles.js",
       "publicPath": "static/chunks/styles.js"
-    }
-  ],
-  "./noop": [
-    {
-      "id": "./node_modules/next/dist/client/noop.js",
-      "name": "./node_modules/next/dist/client/noop.js",
-      "file": "static/chunks/0.js",
-      "publicPath": "static/chunks/0.js"
-    }
-  ],
-  "../components/centerBox": [
-    {
-      "id": "./components/centerBox.js",
-      "name": "./components/centerBox.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
-    }
-  ],
-  "../components/main": [
-    {
-      "id": "./components/main.js",
-      "name": "./components/main.js",
-      "file": "static/chunks/1.js",
-      "publicPath": "static/chunks/1.js"
     }
   ]
 }
